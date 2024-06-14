@@ -21,7 +21,7 @@ namespace MvcMovie.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var dogImageResponse = await _dogApiService.GetRandomDogImageAsync();
+            var dogImageResponse = await GetRandomDogImageAsync();
             return View(dogImageResponse);
         }
 
