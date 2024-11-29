@@ -1,18 +1,28 @@
-﻿@{
+﻿@model MvcMovie.Models.DogApiModel
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="center-container">
-    <h1>Today is the best day of your life!</h1>
+<h1>Random Dog Image</h1>
+@if (Model.Status == "success")
+{
+    @if (Model.Message == null)
+    {
+        <p>Could not fetch message at this time. Please try again later.</p>
+    }
+    else
+    {
+        <img src="@Model.Message" alt="Random Dog Image"/>
+    }
+}
+else
+{
+    <p>Could not fetch a dog image at this time. Please try again later.</p>
+}
 
-    Click to see a random picture of a dog
+<head>
+    <link rel="stylesheet" href="styles.css" />
+</head>
 
-</div>
-
-
-<div>
-    <button class= "doggy-button">
-    see doggy
-    </button>
-
-</div>
+<input type="dog-button" value="show me another doggy" onclick="location.href='@Url.Action("Index", "Home")'"/>
