@@ -1,10 +1,15 @@
-﻿@model MvcMovie.Models.DogApiModel
+﻿@{
+Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model MvcMovie.Models.DogApiModel
 
 @{
     ViewData["Title"] = "Home Page";
 }
 
-<h1>Random Dog Image</h1>
+<h1>Today is the best day of your life!</h1>
+
 @if (Model.Status == "success")
 {
     @if (Model.Message == null)
@@ -13,16 +18,13 @@
     }
     else
     {
-        <img src="@Model.Message" alt="Random Dog Image"/>
+        <div class="container">
+        <img src="@Model.Message" alt="Random Dog Image" class="dog-image"/>
+        <input type="button" value="show me another doggy" onclick="location.href='@Url.Action("Index", "Home")'"/>
+        </div>
     }
 }
 else
 {
     <p>Could not fetch a dog image at this time. Please try again later.</p>
 }
-
-<head>
-    <link rel="stylesheet" href="styles.css" />
-</head>
-
-<input type="dog-button" value="show me another doggy" onclick="location.href='@Url.Action("Index", "Home")'"/>

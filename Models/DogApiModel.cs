@@ -14,6 +14,3 @@ namespace MvcMovie.Models
         }
     }
 }
-
-//TODO remove constructor on line 7-10 and bring back Status and Message to Upper case and see if it works
-//We are trying to understand why when we made everything lower case, it worked

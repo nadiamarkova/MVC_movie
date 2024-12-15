@@ -1,0 +1,40 @@
+.container {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    width: 700px;
+  }
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #582f0e;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #b08968;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: none;
+  color: #44250b;
+  padding: 5px 9px;
+  font-family:'Segoe UI', sans-serif;
+  cursor: pointer;
+}
+
+input[type=button]:hover, 
+input[type=submit]:hover, 
+input[type=reset]:hover {
+  background-color: #ddb892; 
+  color: #44250b;
+}
+
+.dog-image {
+    width: 95%;
+    height: 90%;
+    border-radius: 6px;
+    object-fit: cover;
+}

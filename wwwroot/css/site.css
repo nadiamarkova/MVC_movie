@@ -19,51 +19,23 @@ html {
 
 body {
   margin-bottom: 60px;
-  background-color: LavenderBlush;
+  background-color: #fff1e6;
   font-family: 'Segoe UI', sans-serif;
+  cursor: url('pawprint_small.png'), auto;
 }
+
 
 .center-container {
   text-align: center;
 }
 
-.doggy-button {
-  text-align: center;
-  position: relative;
-  top: 2em;
-  left: 50%;
-  padding: 0;
-  margin: 0;
-  background-color: Lavender;
-  margin-top: 20px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #6513e9;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
   cursor: pointer;
-  width: 200px;
-  transform: translate(-50%, -50%);
 }
-
-.doggy-button:hover {
-  background-color: #d4d4f7;
-}
-
-
-
-
-/*
-.dog-image {
-  max-width: 100%;
-  width: 500px;
-  height: auto;
-  border: 2px solid #ccc;
-  border-radius: 15px;
-  margin-top: 15px;
-}
-
-.clicking-text {
-  position: absolute;
-  top: 202px;
-  left: 1010px;
-  font-family: 'Calibri Light', sans-serif;
-}
-/*
