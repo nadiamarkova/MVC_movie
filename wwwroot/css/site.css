@@ -24,11 +24,9 @@ body {
   cursor: url('pawprint_small.png'), auto;
 }
 
-
 .center-container {
   text-align: center;
 }
-
 
 input[type=button], input[type=submit], input[type=reset] {
   background-color: #6513e9;
